@@ -19,7 +19,7 @@ export default class Character extends Component {
                 <p>Someday there’s a time in Japan where the sky rises with robots and auto bots.</p>
             </section>
             <section>
-                <button>{this.props.btnTitle}</button>
+                <button className={`bg-[${this.props.btnBG}] text-[${this.props.btnFG}]`}>{this.props.btnTitle}</button>
             </section>
         </div>
       </div>
