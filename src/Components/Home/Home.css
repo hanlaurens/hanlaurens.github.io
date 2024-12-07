@@ -1,3 +1,11 @@
+@keyframes expandWidth {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 #HOME {
   display: grid;
   grid-auto-flow: column;
@@ -10,55 +18,56 @@
   justify-content: center;
   align-items: center;
 }
-#HOME > section#eddy_sec {
-  background-color: #0a0a08;
-  color: #ffffff;
-}
-.side {
+#charSide {
   display: grid;
   grid-auto-flow: row;
   grid-template-rows: repeat(2, 1fr);
   height: 50%;
-  transform: translateY(1rem);
   padding: 2.5rem;
 }
-.side > div:nth-child(1) {
+#charSide > div:nth-child(1) {
   display: grid;
 }
-.side > div:nth-child(1) > section {
+#charSide > div:nth-child(1) > section {
   display: grid;
   grid-auto-flow: row;
   padding: 1rem;
 }
-.side > div:nth-child(1) > section:nth-child(1) > header {
+#charSide > div:nth-child(1) > section:nth-child(1) > header {
   font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
   height: 100%;
 }
-.side > div:nth-child(1) > section:nth-child(1) > header > span {
+#charSide > div:nth-child(1) > section:nth-child(1) > header > span {
   display: flex;
   align-items: center;
   height: 100%;
 }
-.side > div:nth-child(1) > section:nth-child(2) > div {
+#charSide > div:nth-child(1) > section:nth-child(2) > div {
   font-family: "Montserrat", sans-serif;
 }
-.side > div:nth-child(2) > section {
-  font-family: "Poppins", sans-serif;
+#charSide > div:nth-child(2) > section {
+  font-family: "Montserrat", sans-serif;
   padding: 1rem;
 }
-.side > div:nth-child(2) > section:nth-child(1) > p {
-  width: 60%;
+#charSide > div:nth-child(2) > section:nth-child(1) > p {
+  width: 90%;
 }
-.side > div:nth-child(2) > section:nth-child(2) > button {
-  padding: 0.7rem 4rem;
+#charSide > div:nth-child(2) > section:nth-child(2) > a {
+  width: 50%;
+  padding: 0.5rem 0;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
   #HOME {
+    transform: translateY(18%);
     grid-auto-flow: row;
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr);
@@ -66,7 +75,21 @@
   #HOME > section {
     align-items: start;
   }
-  .side {
+  #charSide {
     transform: translateY(0);
+    height: 100%;
+  }
+  #charSide > div:nth-child(1) > section:nth-child(1) > header > span {
+    font-size: 2.5rem;
+  }
+  #charSide > div:nth-child(2) > section:nth-child(1) > p {
+    width: 100%;
+  }
+  #charSide > div:nth-child(2) > section:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  #charSide > div:nth-child(2) > section:nth-child(2) > a {
+    width: 100%;
   }
 }/*# sourceMappingURL=Home.css.map */

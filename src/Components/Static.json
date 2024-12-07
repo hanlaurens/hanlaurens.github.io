@@ -1,0 +1,49 @@
+{
+  "globalTitle": "Eddy Loves Rishabh",
+  "profiles": [
+    {
+      "name": "Eddy Seed",
+      "bio": "Harnessing the power of AI to create harmony between humans and bots, Eddy dreams of a cybernetic sunrise that transforms life as we know it",
+      "skils": {
+        "one": "Loves Digital Forensics",
+        "two": "Black Hat Hacker",
+        "three": "Coffee Lover"
+      },
+      "buttonText": "Get-In Touch",
+      "buttonLink": "mailto:eddyseed911@outlook.com"
+    },
+    {
+      "name": "Rishabh Jain",
+      "bio": " Innovating systems that breathe life into intelligent machines, he envisions a world where technology uplifts humanity, one circuit at a time.",
+      "skils": {
+        "one": "Passionate Web Developer",
+        "two": "Loves UI/UX Designing",
+        "three": "Coffee Lover"
+      },
+      "buttonText": "Contact Me",
+      "buttonLink": "mailto:randomboiii069@gmail.com"
+    }
+  ],
+  "animations": {
+    "home": {
+      "eddy_sec": "animate__animated animate__fadeIn",
+      "rishabh_sec": "animate__animated animate__fadeIn"
+    },
+    "navigation": {
+      "global": "animate__animated animate__fadeInDown"
+    }
+  },
+  "links": {
+    "navbar-site-logo": "https://bit.ly/4iqG9X3",
+    "quick-links": {
+      "anchor1": {
+        "class": "fa-brands fa-instagram",
+        "link": "https://www.instagram.com/rishabh_singhal13/"
+      },
+      "anchor2":{
+        "class": "fa-brands fa-github",
+        "link": "https://github.com/eddyseed/"
+      }
+    }
+  }
+}

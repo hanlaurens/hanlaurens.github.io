@@ -1,26 +1,34 @@
 import React, { Component } from 'react'
 import './Home.css'
+import 'animate.css'
 export default class Character extends Component {
   render() {
     return (
-      <div className='side'>
+      <div id='charSide' className={``}>
         <div>
-            <section>
-                <header><span>{this.props.NAME}</span></header>
-            </section>
-            <section className='flex items-center'>
-                <div>Passionate Programmer</div>
-                <div>Artificial Intellgence Enthusiast</div>
-                <div>Coffee Lover</div>
-            </section>
+          <section>
+            <header><span className={`${this.props.animation}`}>{this.props.NAME}</span></header>
+          </section>
+          <section className={`flex items-center ${this.props.fontBold ? 'font-semibold' : ''} ${this.props.animation}`}>
+            <div>{this.props.skillSet.one}</div>
+            <div>{this.props.skillSet.two}</div>
+            <div>{this.props.skillSet.three}</div>
+          </section>
         </div>
         <div>
-            <section>
-                <p>Someday there’s a time in Japan where the sky rises with robots and auto bots.</p>
-            </section>
-            <section>
-                <button className={`bg-[${this.props.btnBG}] text-[${this.props.btnFG}]`}>{this.props.btnTitle}</button>
-            </section>
+          <section>
+            <p className={` ${this.props.animation} ${this.props.fontBold ? 'font-semibold' : ''}`}>{this.props.bio}</p>
+          </section>
+          <section>
+            <a
+              href={this.props.btnLink}
+              onClick={this.props.skillFun}
+              className={`bg-[${this.props.BG}] text-[${this.props.FG}] ${this.props.animation} inline-block px-4 py-2 rounded`}
+            >
+              {this.props.btnTitle}
+            </a>
+
+          </section>
         </div>
       </div>
     )
