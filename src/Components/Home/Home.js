@@ -69,6 +69,7 @@ export default class Home extends Component {
             fontBold ={true} 
             animation={data.animations.home.rishabh_sec}
             btnLink={rj.buttonLink}
+            boxPadding={rj.boxPadding}
           />
         </section>
       </div>
